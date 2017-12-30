@@ -11,6 +11,8 @@ Vue.prototype.$axios = axios
 //css
 import "./statics/css/phoneMax.css"
 
+//App.vue
+import App from './App.vue'
 
 //router
 import home from '@/home/home'
@@ -23,8 +25,7 @@ const router = new VueRouter({
   ]
 })
 
-//App.vue
-import App from './App.vue'
+
 
 new Vue({
   el: '#app',

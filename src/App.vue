@@ -3,7 +3,7 @@
       <!-- 路由匹配到的组件将渲染在这里 -->
       <router-view></router-view>
 
-      <!-- TapBar -->
+        <!-- TapBar -->
       <div class="tapBar">
           <div class="tapBar-Item">
               <router-link class='tapBar-a' to="/message">
@@ -30,9 +30,9 @@
                </router-link>
           </div>
       </div>
+
   </div>
 </template>
-
 
 <style scoped>
 .tapBar {
@@ -41,6 +41,7 @@
   position: fixed;
   bottom: 0;
   background-color: black;
+  left: 0;
 }
 
 .tapBar-Item {
@@ -58,7 +59,7 @@
   align-items: center;
 }
 
-.tapBar-a>span {
+.tapBar-a > span {
   position: relative;
   width: 0.4rem;
   height: 0.4rem;
@@ -73,21 +74,22 @@ img {
 .tap-Img {
   width: 0.6rem;
   height: 0.6rem;
-  top:-0.18rem;
+  top: -0.18rem;
 }
 
 i {
-   position: absolute;
-   width: 0.1rem;
-   height: 0.1rem;
-   background-color: red;
-   right: -0.05rem;
-   top:-0.05rem;
-   border-radius: 50%;
+  position: absolute;
+  width: 0.1rem;
+  height: 0.1rem;
+  background-color: red;
+  right: -0.05rem;
+  top: -0.05rem;
+  border-radius: 50%;
 }
 </style>
 
 <script>
+  
 export default {
   data() {
     return {};
